@@ -1,1 +1,59 @@
 @import '../../assets/scss/colors.scss';
+
+.aniversariantes{
+    box-shadow: $box-shadow;
+    height: 18rem;
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: $border-radius;
+    position: relative;
+
+    h1{
+        color: $color-aniversariantes;
+        text-shadow: $text-shadow;
+    }
+
+    &__carousel{
+        padding: 0 4rem; 
+        img{
+            width:10rem;
+            height: 10rem;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 3rem;
+        }
+
+        &__controuls-btn{
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 1rem;
+            color: $color-aniversariantes;
+            font-weight: bold;
+            font-size: 1.5rem;
+            transition: 0.6s ease;
+            
+    
+            &:hover{
+                background-color: $color-dark;
+            }
+    
+            &--next{
+                right: .5rem;
+                border-radius: 0 5px 5px 0;
+            }
+
+            &--prev{
+                left: .5rem;
+                border-radius: 5px 0 0 5px ;
+                
+            }
+        }
+    }
+
+    &__pessoa{
+        display: flex;
+        align-items: center;
+    }
+}
