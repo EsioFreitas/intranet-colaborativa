@@ -1,0 +1,20 @@
+@import '../../assets/scss/colors.scss';
+
+.informes{
+    box-shadow: 1px 2px 5px 2px $color-dark-opacity;
+    border-radius: .3rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    &__title{
+        color: $color-informes;
+        text-shadow: 1px 1px 2px $color-dark-opacity;
+    }
+
+    &__list{
+        color: $color-dark;
+        li{
+            margin: .5rem 0;
+            line-height: 1.5;
+        }
+    }
+}
