@@ -6,8 +6,8 @@ import './Notas.scss';
 
 class Notas extends Component{
     state = {
-        stateNotas: ["Digite e envie uma nota!!"],
-        text: null
+        stateNotas: ["Digite e envie uma nota!! Juro que funciona! kkk"],
+        text: ''
     }
 
     render(){
@@ -26,9 +26,11 @@ class Notas extends Component{
                         }
                     </ul>
                 </div>
-                <Input click={(event)=>this.saveNota(event)} 
+                <Input click={this.saveNota} 
                        change={(event)=>this.onchageHandle(event)}
-                       value={this.state.text}/>
+                       value={this.state.text}
+                       placeholder="Crie uma nota ..."
+                       btnClass="notas"/>
             </div>
         );
     }
@@ -39,7 +41,9 @@ class Notas extends Component{
         this.setState({stateNotas: tmp});
     }
 
-    saveNota = (event) => {
+    saveNota = () => {
+        if(this.state.text === '') return;
+
         let tmp = [...this.state.stateNotas];
         tmp.push(this.state.text);
         this.setState({stateNotas: tmp, text: ""});

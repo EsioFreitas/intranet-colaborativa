@@ -1,5 +1,18 @@
 @import '../../../assets/scss/colors.scss';
 
+.btn-feed{
+    background-color: $color-feed;
+}
+
+.btn-grupos{
+    background-color: $color-sea-primary;
+}
+
+.btn-notas{
+    background-color: $color-notas;
+}
+
+
 .post-intup{
     width: 100%;
     display: flex;
@@ -21,7 +34,6 @@
     }
     &__submit{
         border-radius: 0 1rem 1rem 0;
-        background-color: $color-notas;
         cursor: pointer;
         border: none;
         font-weight: bold;
