@@ -7,6 +7,7 @@ import Grupos from '../../components/Grupos/Grupos';
 import Notas from '../../components/Notas/Notas';
 import Aniversariantes from '../../components/Aniversariantes/Aniversariantes';
 import Feed from '../../components/Feed/Feed';
+import Enquetes from '../../components/Enquetes/Enquetes';
 
 import './Homepage.scss';
 
@@ -23,6 +24,7 @@ class Homepage extends Component{
                     <Notas/>
                     <Aniversariantes/>
                     <Feed/>
+                    <Enquetes/>
                 </div>
             </Fragment>
         );

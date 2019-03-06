@@ -10,6 +10,8 @@
     h1{
         color: $color-feed;
         text-shadow: $text-shadow;
+        margin: 0;
+        margin-bottom: 1.5rem;
     }
 
     &__container{
