@@ -3,10 +3,11 @@
 
 .grupos{
     box-shadow: $box-shadow;
-    padding: .5rem 1rem;
+    padding: 1rem;
     border-radius: $border-radius;
 
     h1{
         color: $color-grupos;
+        margin-top: .5rem;
     }
 }

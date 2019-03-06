@@ -1,0 +1,60 @@
+@import '../../assets/scss/colors.scss';
+
+.notas{
+    margin: 2rem 0;
+    height: 35rem;
+    padding: .5rem;
+    box-shadow: $box-shadow; 
+    border-radius: $border-radius;
+    
+
+    h1{
+        color: $color-notas;
+        margin-top: .5rem;
+        text-shadow: $text-shadow;
+    }
+
+    &__container{
+        overflow: auto;
+        height: 83%;
+        &::-webkit-scrollbar { 
+            display: none;
+        }
+        padding: .5rem;
+    }
+
+    &__list{
+        margin: 0;
+        padding: 0;
+
+        
+        li{
+            background-color: $color-notas;
+            list-style: none;
+            padding: 1rem;
+            position: relative;
+            border-radius: .2rem;
+            box-shadow: 1px 2px 3px $color-dark;
+            margin: 1rem 0;
+
+            div{
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: inline-block;
+                margin: .3rem;
+                padding: .5rem;
+                color: $color-light;
+                background-color: $color-informes;
+                cursor: pointer;
+                width: 1rem;
+                height: 1rem;
+                border-radius: 50%;
+                box-shadow: 1px 1px 1px $color-dark;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

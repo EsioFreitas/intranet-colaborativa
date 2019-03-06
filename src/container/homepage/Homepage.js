@@ -4,6 +4,7 @@ import Navbar from '../../components/UI/Navbar/Navbar';
 import CarouselADM from '../../components/CarouselADM/CarouselADM';
 import Informes from '../../components/Informes/Informes';
 import Grupos from '../../components/Grupos/Grupos';
+import Notas from '../../components/Notas/Notas';
 
 import './Homepage.scss';
 
@@ -17,7 +18,7 @@ class Homepage extends Component{
                     <CarouselADM/>
                     <Informes/>
                     <Grupos/>
-                    kk
+                    <Notas/>
                 </div>
             </Fragment>
         );
