@@ -1,0 +1,26 @@
+@import '../../../assets/scss/colors.scss';
+
+.btn-informes{
+    background-color: $color-informes;
+}
+
+.btn-grupos{
+    background-color: $color-grupos;
+}
+
+.btn-enquetes{
+    background-color: $color-enquetes;
+}
+
+.btn{
+    cursor: pointer;
+    color: $color-light;
+    box-shadow: 1px 2px 3px 2px $color-dark-opacity;
+
+    &__send{
+        display: inline-block;
+        padding: .5rem 1rem;
+        border-radius: 1rem;
+        margin-top: 1rem; 
+    }
+}
