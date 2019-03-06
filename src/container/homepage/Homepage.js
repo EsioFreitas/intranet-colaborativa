@@ -5,6 +5,7 @@ import CarouselADM from '../../components/CarouselADM/CarouselADM';
 import Informes from '../../components/Informes/Informes';
 import Grupos from '../../components/Grupos/Grupos';
 import Notas from '../../components/Notas/Notas';
+import Aniversariantes from '../../components/Aniversariantes/Aniversariantes';
 import Feed from '../../components/Feed/Feed';
 
 import './Homepage.scss';
@@ -20,6 +21,7 @@ class Homepage extends Component{
                     <Informes/>
                     <Grupos/>
                     <Notas/>
+                    <Aniversariantes/>
                     <Feed/>
                 </div>
             </Fragment>
