@@ -8,9 +8,9 @@ const button = props => {
 
     if(props.type === "send")
         btnClass.push('btn__send');
-        
+
     return(
-        <div className={btnClass.join(' ')}>
+        <div className={btnClass.join(' ')} onClick={props.click}>
             {props.children}
         </div>
     );
