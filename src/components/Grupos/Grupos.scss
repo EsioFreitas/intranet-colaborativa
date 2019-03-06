@@ -5,9 +5,25 @@
     box-shadow: $box-shadow;
     padding: 1rem;
     border-radius: $border-radius;
+    height: 60rem;
 
     h1{
         color: $color-grupos;
         margin-top: .5rem;
+    }
+
+    a{
+        text-decoration: none;
+        color: $color-grupos;
+        text-align: end;
+        font-weight: bold;
+        float: right;
+        margin:  1.3rem 0 0 0; 
+    }
+
+    a[class$="plus"]{
+        font-size: 1.3rem;
+        font-weight: lighter;
+        margin:  0 0 1.5rem 0; 
     }
 }

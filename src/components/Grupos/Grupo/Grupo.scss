@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     box-shadow: $box-shadow;
+    clear: both;
     &__photo{
         width: 45%;
         height: 11rem;

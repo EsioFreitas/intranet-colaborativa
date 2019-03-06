@@ -8,6 +8,7 @@ import './Grupos.scss';
 const grupos = () => (
     <div className="grupos">
         <h1>Grupos</h1>
+        <a href="#" className="grupos__plus" >Novo grupo <span >+</span></a>
         {
             Object.keys(gruposHelper).map(grupoH => (
                 <div key={grupoH}>
@@ -16,6 +17,7 @@ const grupos = () => (
                 </div>
             ))
         }
+        <a href="#">Ver todos <span>&#10095;</span></a>
     </div>
 );
 
