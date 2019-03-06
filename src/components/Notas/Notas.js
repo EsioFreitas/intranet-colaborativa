@@ -1,14 +1,15 @@
 import React, {Component} from 'react'
 
+import Input from '../UI/input/Input';
+
 import './Notas.scss';
 
 class Notas extends Component{
     state = {
-        stateNotas: ["ooooi", "tud bom com vc?sdadasda adas dasdsasdasfs fasafasd a"
-        , "tud bom com vc?sdadasda adas dasdsasdasfs fasafasd a", "tud bom com vc?sdadasda adas dasdsasdasfs fasafasd a"
-        , "tud bom com vc?sdadasda adas dasdsasdasfs fasafasd a"
-        , "tud bom com vc?sdadasda adas dasdsasdasfs fasafasd a"]
+        stateNotas: ["Digite e envie uma nota!!"],
+        text: null
     }
+
     render(){
         return(
             <div className='notas'>
@@ -25,7 +26,9 @@ class Notas extends Component{
                         }
                     </ul>
                 </div>
-                
+                <Input click={(event)=>this.saveNota(event)} 
+                       change={(event)=>this.onchageHandle(event)}
+                       value={this.state.text}/>
             </div>
         );
     }
@@ -35,6 +38,17 @@ class Notas extends Component{
         tmp.splice(idx, 1);
         this.setState({stateNotas: tmp});
     }
+
+    saveNota = (event) => {
+        let tmp = [...this.state.stateNotas];
+        tmp.push(this.state.text);
+        this.setState({stateNotas: tmp, text: ""});
+    }
+
+    onchageHandle = (event) => {
+        this.setState({text: event.target.value})
+    }
+
 }
 
 export default Notas;

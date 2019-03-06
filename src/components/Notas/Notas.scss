@@ -3,24 +3,25 @@
 .notas{
     margin: 2rem 0;
     height: 35rem;
-    padding: .5rem;
+    padding: 1rem;
     box-shadow: $box-shadow; 
     border-radius: $border-radius;
     
 
     h1{
         color: $color-notas;
-        margin-top: .5rem;
+        margin: 0;
         text-shadow: $text-shadow;
     }
 
     &__container{
         overflow: auto;
-        height: 83%;
+        height: 79%;
         &::-webkit-scrollbar { 
             display: none;
         }
         padding: .5rem;
+        margin: 1rem;
     }
 
     &__list{
@@ -54,6 +55,11 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                p{
+                    margin: 0;
+                    padding: 0;
+                    margin-bottom: .15rem;
+                }
             }
         }
     }
