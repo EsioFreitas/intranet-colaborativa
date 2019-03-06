@@ -1,0 +1,28 @@
+@import '../../../assets/scss/colors.scss';
+
+
+.grupo{
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: $box-shadow;
+    &__photo{
+        width: 45%;
+        height: 11rem;
+        object-fit: cover;
+    }
+    
+    &__description{
+        display: flex;  
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    &__title{
+        color: $color-grupos;
+        font-weight: normal;
+        text-align: center;
+    }  
+}

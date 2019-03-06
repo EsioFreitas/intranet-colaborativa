@@ -17,6 +17,7 @@ class Homepage extends Component{
                     <CarouselADM/>
                     <Informes/>
                     <Grupos/>
+                    kk
                 </div>
             </Fragment>
         );
