@@ -20,8 +20,8 @@ class Homepage extends Component{
                 <div className="homepage-content">
                     <CarouselADM/>
                     <Informes/>
-                    <Grupos/>
                     <Notas/>
+                    <Grupos/>
                     <Aniversariantes/>
                     <Feed/>
                     <Enquetes/>

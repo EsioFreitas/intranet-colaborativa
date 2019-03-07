@@ -1,26 +1,34 @@
-@import '../../assets/scss/colors.scss';
+@import "../../assets/scss/colors.scss";
 
-.informes{
-    box-shadow: $box-shadow;
-    border-radius: $border-radius;
-    padding: 1rem;
-    margin: 2rem 0;
-    &__title{
-        color: $color-informes;
-        text-shadow: $text-shadow;
-        margin-top: .5rem;
-    }
+.informes {
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  padding: 1rem;
+  margin: 2rem 0;
+  &__title {
+    color: $color-informes;
+    text-shadow: $text-shadow;
+    margin-top: 0.5rem;
+  }
 
-    &__list{
-        color: $color-dark;
-        li{
-            margin: .5rem 0;
-            line-height: 1.5;
-        }
+  &__list {
+    color: $color-dark;
+    li {
+      margin: 0.5rem 0;
+      line-height: 1.5;
     }
+  }
 
-    &__btn{
-        margin-top: 2rem;
-        text-align: end;
-    }
+  &__btn {
+    margin-top: 2rem;
+    margin-right: 1rem;
+    text-align: end;
+  }
+}
+
+@media (min-width: 40rem) {
+  .informes {
+    width: 47%;
+    margin: 0;
+  }
 }

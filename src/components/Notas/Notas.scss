@@ -1,66 +1,74 @@
-@import '../../assets/scss/colors.scss';
+@import "../../assets/scss/colors.scss";
 
-.notas{
-    margin: 2rem 0;
-    height: 35rem;
-    padding: 1rem;
-    box-shadow: $box-shadow; 
-    border-radius: $border-radius;
-    
+.notas {
+  margin: 2rem 0;
+  height: 23rem;
+  padding: 1rem;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
 
-    h1{
-        color: $color-notas;
-        margin: 0;
-        text-shadow: $text-shadow;
+  h1 {
+    color: $color-notas;
+    margin: 0;
+    text-shadow: $text-shadow;
+  }
+
+  &__container {
+    overflow: auto;
+    height: 65%;
+    &::-webkit-scrollbar {
+      display: none;
     }
+    padding: 0.5rem;
+    margin: 1rem;
+  }
 
-    &__container{
-        overflow: auto;
-        height: 79%;
-        &::-webkit-scrollbar { 
-            display: none;
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    li {
+      background-color: $color-notas;
+      list-style: none;
+      padding: 1rem;
+      position: relative;
+      border-radius: 0.2rem;
+      box-shadow: 1px 2px 3px $color-dark;
+      margin: 1rem 0;
+
+      div {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-block;
+        margin: 0.3rem;
+        padding: 0.5rem;
+        color: $color-light;
+        background-color: $color-informes;
+        cursor: pointer;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        box-shadow: 1px 1px 1px $color-dark;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          margin: 0;
+          padding: 0;
+          margin-bottom: 0.15rem;
         }
-        padding: .5rem;
-        margin: 1rem;
+      }
     }
+  }
+}
 
-    &__list{
-        margin: 0;
-        padding: 0;
-
-        
-        li{
-            background-color: $color-notas;
-            list-style: none;
-            padding: 1rem;
-            position: relative;
-            border-radius: .2rem;
-            box-shadow: 1px 2px 3px $color-dark;
-            margin: 1rem 0;
-
-            div{
-                position: absolute;
-                top: 0;
-                right: 0;
-                display: inline-block;
-                margin: .3rem;
-                padding: .5rem;
-                color: $color-light;
-                background-color: $color-informes;
-                cursor: pointer;
-                width: 1rem;
-                height: 1rem;
-                border-radius: 50%;
-                box-shadow: 1px 1px 1px $color-dark;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                p{
-                    margin: 0;
-                    padding: 0;
-                    margin-bottom: .15rem;
-                }
-            }
-        }
-    }
+@media (min-width: 40rem) {
+  .notas {
+    width: 47%;
+    float: right;
+    position: relative;
+    top: -26.7rem;
+    height: 24.7rem;
+  }
 }
