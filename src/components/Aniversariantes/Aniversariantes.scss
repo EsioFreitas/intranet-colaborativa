@@ -1,61 +1,58 @@
-@import '../../assets/scss/colors.scss';
+@import "../../assets/scss/colors.scss";
 
-.aniversariantes{
-    box-shadow: $box-shadow;
-    height: 18rem;
-    margin: 2rem 0;
-    padding: 1rem;
-    border-radius: $border-radius;
-    position: relative;
+.aniversariantes {
+  box-shadow: $box-shadow;
+  height: 18rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: $border-radius;
+  position: relative;
+  h1 {
+    color: $color-aniversariantes;
+    text-shadow: $text-shadow;
+  }
 
-    h1{
-        color: $color-aniversariantes;
-        text-shadow: $text-shadow;
+  &__carousel {
+    padding: 0 2rem;
+    margin-top: 3rem;
+    img {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 1rem;
     }
 
-    &__carousel{
-        padding: 0 2rem; 
-        margin-top: 3rem;
-        img{
-            width: 6rem;
-            height: 6rem;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-right: 1rem;
-        }
+    &__controuls-btn {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 0.5rem;
+      color: $color-aniversariantes;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: 0.6s ease;
 
-        &__controuls-btn{
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: .5rem;
-            color: $color-aniversariantes;
-            font-weight: bold;
-            font-size: 1rem;
-            transition: 0.6s ease;
-            
-    
-            &:hover{
-                background-color: $color-dark;
-            }
-    
-            &--next{
-                right: .3rem;
-                border-radius: 0 5px 5px 0;
-            }
+      &:hover {
+        background-color: $color-dark;
+      }
 
-            &--prev{
-                left: .3rem;
-                border-radius: 5px 0 0 5px ;
-                
-            }
-        }
+      &--next {
+        right: 0.3rem;
+        border-radius: 0 5px 5px 0;
+      }
+
+      &--prev {
+        left: 0.3rem;
+        border-radius: 5px 0 0 5px;
+      }
     }
+  }
 
-    &__pessoa{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  &__pessoa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
