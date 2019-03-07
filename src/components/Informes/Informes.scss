@@ -42,13 +42,17 @@
 
 @media screen and (min-width: 62.5rem) {
   .informes {
-    width: 35%;
+    width: 30%;
     margin: 0;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &__list {
       display: flex;
       flex-wrap: wrap;
       overflow: auto;
-      height: 17.5rem;
+      height: 100%;
       &::-webkit-scrollbar {
         display: none;
       }

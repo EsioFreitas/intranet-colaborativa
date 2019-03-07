@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Homepage from './container/homepage/Homepage';
+import Homepage from "./container/homepage/Homepage";
 
-import './App.css';
+import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Homepage/>
+        <Homepage />
       </div>
     );
   }

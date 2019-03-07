@@ -1,37 +1,43 @@
-@import '../../assets/scss/colors.scss';
+@import "../../assets/scss/colors.scss";
 
-.homepage-content{
-    width: 95%;
-    margin: 0 auto;
+h1 {
+  font-size: 2.5rem;
+}
+
+.homepage-content {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1301px;
 }
 
 @media screen and (min-width: 62.5rem) {
-    main{
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    .homepage-content{
-        width: 85%;
-    }
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  .homepage-content {
+    width: 85%;
+  }
 
-    .second-section {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        margin: 3rem 0;
-        &__group{
-            width:35%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }        
+  .second-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 3rem 0;
+    &__group {
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
+  }
 
-    .first-section{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        margin: 2rem 0;
-    }
+  .first-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 2rem 0;
+  }
 }

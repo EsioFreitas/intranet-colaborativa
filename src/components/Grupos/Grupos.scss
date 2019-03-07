@@ -6,8 +6,8 @@
   border-radius: $border-radius;
   height: 60rem;
 
-  &__container{
-      clear: both;
+  &__container {
+    clear: both;
   }
 
   h1 {
@@ -34,27 +34,27 @@
 @media (min-width: 40rem) {
   .grupos {
     height: 37rem;
-    &__container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
     }
   }
 }
 
-@media screen and (min-width: 62.5rem){
+@media screen and (min-width: 62.5rem) {
   .grupos {
     height: 37rem;
     width: 65%;
     margin: 0;
     display: inline-block;
 
-    &__container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
     }
   }
 }
