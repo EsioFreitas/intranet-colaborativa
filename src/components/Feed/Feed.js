@@ -18,7 +18,7 @@ class feed extends Component{
             <div className="feed">
                 <h1>Feed</h1>
                 <Input btnClass="feed" placeholder='Compartilhe algo ...' 
-                       click={()=>this.newpost(this.state.postText)}
+                       click={this.newpost}
                        value={this.state.postText}
                        change={(event)=>this.setState({postText: event.target.value})}/>
                 <section className="feed__container">
@@ -57,7 +57,10 @@ class feed extends Component{
                                     <div className='feed__perfil-comentario'>
                                         <img src={Perfil}/>
                                         <div>
-                                            <Input btnClass="feed" placeholder='Compartilhe algo ...'/>
+                                            <Input btnClass="feed" placeholder='Compartilhe algo ...'
+                                            click={()=>this.newComent(idx)}
+                                            value={this.state.comentText}
+                                            change={(event)=>this.setState({comentText: event.target.value})}/>
                                         </div>
                                     </div>
                                 </article>
@@ -69,8 +72,7 @@ class feed extends Component{
         );
     }
 
-    newpost = (tex) =>{
-        
+    newpost = () =>{
         const newPost = {
             person:{
                 name: "Bruna Pinos",
@@ -79,23 +81,27 @@ class feed extends Component{
             content: this.state.postText,
             photoPost: null,
             time: "Agora",
-            comentarios: null
+            comentarios: []
         }
-        
         let tmp = [
             ...this.state.statePosts,
             newPost
-            
         ];
-        
-        
-        console.log(tmp)
-        
-       this.setState({statePosts: tmp, postText: ''})
+        this.setState({statePosts: tmp, postText: ''})
     }
 
-    newComent = () =>{
-
+    newComent = (idx) =>{
+        console.log(this.state.statePosts[idx].comentarios.length);
+        let stateTmp = [...this.state.statePosts]
+        const newComent = {
+            nome: "Bruna Pinos",
+            comentario: this.state.comentText,
+            photoComentario: Perfil
+        }
+        let tmp = [...this.state.statePosts[idx].comentarios]
+        tmp.push(newComent);
+        stateTmp[idx].comentarios = tmp
+        this.setState({statePosts: stateTmp, comentText: ''})
     }
 
 }
