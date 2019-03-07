@@ -28,7 +28,7 @@ class Homepage extends Component{
                     </sectio>
                     <section className='second-section'>
                         <Feed/>
-                        <div>
+                        <div className='second-section__group'>
                             <Aniversariantes/>
                             <Enquetes/>
                         </div>

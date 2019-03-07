@@ -56,3 +56,10 @@
     justify-content: center;
   }
 }
+
+@media screen and (min-width: 62.5rem) {
+  .aniversariantes {
+    width: 100%;
+    margin: 0;
+  }
+}
