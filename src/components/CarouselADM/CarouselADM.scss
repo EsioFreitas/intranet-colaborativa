@@ -1,50 +1,56 @@
-@import '../../assets/scss/colors.scss';
+@import "../../assets/scss/colors.scss";
 
-.carouselADM{
-    
-    &__slides{
-        position: relative;
-        width: 100%;
-        margin: 0 auto;
-    }
-    &__slide{
-     
-        margin: 1rem auto;
-        img{
-            width: 100%;
-        }
-
-        h4{
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            padding: 1rem;
-            background-color: $color-dark-opacity;
-            color: $color-light;
-        }
-    }
-    &__controuls-btn{
-        cursor: pointer;
-        position: absolute;
-        top: 30%;
-        width: auto;
-        padding: 1rem;
-        color: $color-dark;
-        font-weight: bold;
-        font-size: 1.5rem;
-        transition: 0.6s ease;
-        border-radius: 0 5px 5px 0;
-
-        &:hover{
-            background-color: $color-light;
-        }
-
-        &--next{
-            right: 0;
-        }
+.carouselADM {
+  &__slides {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__slide {
+    margin: 1rem auto;
+    img {
+      width: 100%;
     }
 
-    ul {
-        display: none;
+    h4 {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 1rem;
+      background-color: $color-dark-opacity;
+      color: $color-light;
     }
+  }
+  &__controuls-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    padding: 1rem;
+    color: $color-dark;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: 0.6s ease;
+    border-radius: 0 5px 5px 0;
+
+    &:hover {
+      background-color: $color-light;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+
+  ul {
+    display: none;
+  }
+}
+
+@media (min-width: 40rem) {
+  .carouselADM {
+    &__controuls-btn {
+      top: 40%;
+    }
+  }
 }
