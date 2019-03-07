@@ -3,8 +3,7 @@ import AnaPhoto from '../assets/images/perfil5.jpg';
 import LucasPhoto from '../assets/images/perfil4.jpg';
 import ComentarioPhoto from '../assets/images/reuniao.jpg';
 
-const posts ={
-    post1:{
+const posts =[{
         person:{
             name: "Ana Clara",
             photoPerfil: AnaPhoto
@@ -23,8 +22,6 @@ const posts ={
                 comentario: "Muito feliz por trabalhar com essa equipe!",
                 photoComentario: JuliaPhoto
             }
-        ]
-    }
-}
+        ]}]
 
 export default posts;

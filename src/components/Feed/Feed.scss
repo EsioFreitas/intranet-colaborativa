@@ -2,8 +2,8 @@
 
 .feed{
     box-shadow: $box-shadow;
-    height: 50rem;
-    margin: 2rem 0;
+    height: 48rem;
+    margin: 1.5rem 0;
     padding: .5rem;
     border-radius: $border-radius;
 
@@ -40,8 +40,9 @@
         flex-direction: row;
         align-items: center;
         img{
-            width: 5rem;
-            height: 5rem;
+            margin-top: 1rem;
+            width: 4rem;
+            height: 4rem;
             object-fit: cover;
             border-radius: 50%;
             margin-right: 1rem;
@@ -55,6 +56,7 @@
 
     &__content{
         padding: 0 1rem;
+        word-wrap: break-word;
     }
 
     &__img{
