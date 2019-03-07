@@ -35,6 +35,7 @@
       border-radius: 0.2rem;
       box-shadow: 1px 2px 3px $color-dark;
       margin: 1rem 0;
+      word-wrap: break-word;
 
       div {
         position: absolute;
@@ -65,6 +66,13 @@
 
 @media (min-width: 40rem) {
   .notas {
-   
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        width: 45%;
+        margin: 2.5%;
+      }
+    }
   }
 }
