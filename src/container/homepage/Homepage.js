@@ -16,6 +16,7 @@ class Homepage extends Component {
     return (
       <Fragment>
         <Navbar />
+        <div className='backgraund'/>
         <div className="homepage-content">
           <main>
             <CarouselADM />
