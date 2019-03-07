@@ -11,6 +11,7 @@ const informes = () => (
             <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
             <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
             <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+            <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
         </ul>
         <div className='informes__btn'>
             <Button btnClass="informes" type="send">Solicitar</Button>
