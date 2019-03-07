@@ -1,29 +1,34 @@
-@import '../../../assets/scss/colors.scss';
+@import "../../../assets/scss/colors.scss";
 
+.grupo {
+  margin: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: $box-shadow;
+  clear: both;
+  &__photo {
+    width: 45%;
+    height: 11rem;
+    object-fit: cover;
+  }
 
-.grupo{
-    margin: 1em 0;
+  &__description {
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     justify-content: space-between;
-    box-shadow: $box-shadow;
-    clear: both;
-    &__photo{
-        width: 45%;
-        height: 11rem;
-        object-fit: cover;
-    }
-    
-    &__description{
-        display: flex;  
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: space-between;
-        padding: 1rem;
-    }
+    padding: 1rem;
+  }
 
-    &__title{
-        color: $color-grupos;
-        font-weight: normal;
-        text-align: center;
-    }  
+  &__title {
+    color: $color-grupos;
+    font-weight: normal;
+    text-align: center;
+  }
+}
+
+@media (min-width: 40rem) {
+  .grupo {
+    width: 45% ;
+  }
 }

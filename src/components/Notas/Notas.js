@@ -6,7 +6,7 @@ import './Notas.scss';
 
 class Notas extends Component{
     state = {
-        stateNotas: ["Digite e envie uma nota!! Juro que funciona! kkk"],
+        stateNotas: ["Digite e envie uma nota!! Juro que funciona! kkk", "Não esqueça de fazer um post!", "Faça comentários também!!!", "Aceito feedbacks =)"],
         text: ''
     }
 
