@@ -42,3 +42,19 @@
     }
   }
 }
+
+@media screen and (min-width: 62.5rem){
+  .grupos {
+    height: 37rem;
+    width: 65%;
+    margin: 0;
+    display: inline-block;
+
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+  }
+}

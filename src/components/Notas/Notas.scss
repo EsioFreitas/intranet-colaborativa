@@ -66,6 +66,9 @@
 
 @media (min-width: 40rem) {
   .notas {
+    &__container {
+      height: 80%;
+    }
     &__list {
       display: flex;
       flex-wrap: wrap;
@@ -80,6 +83,11 @@
 @media screen and (min-width: 62.5rem) {
   .notas {
     width: 30%;
+    margin: 0;
+    height: 37rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     &__list {
       flex-direction: column;
       li {
