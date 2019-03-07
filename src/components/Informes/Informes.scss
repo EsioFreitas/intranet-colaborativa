@@ -22,7 +22,7 @@
   &__btn {
     margin-top: 1rem;
     margin-right: 1rem;
-    margin-bottom: .2rem;
+    margin-bottom: 0.2rem;
     text-align: end;
   }
 }
@@ -35,6 +35,26 @@
       li {
         margin: 0.8rem;
         width: 45%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 62.5rem) {
+  .informes {
+    width: 35%;
+    margin: 0;
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      overflow: auto;
+      height: 17.5rem;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      li {
+        width: 100%;
       }
     }
   }

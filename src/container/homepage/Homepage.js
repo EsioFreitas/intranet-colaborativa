@@ -18,8 +18,10 @@ class Homepage extends Component{
             <Fragment>
                 <Navbar/>
                 <div className="homepage-content">
-                    <CarouselADM/>
-                    <Informes/>
+                    <main>
+                        <CarouselADM/>
+                        <Informes/>
+                    </main>
                     <Notas/>
                     <Grupos/>
                     <Aniversariantes/>

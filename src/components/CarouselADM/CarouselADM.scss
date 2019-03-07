@@ -57,9 +57,10 @@
 
 @media screen and (min-width: 62.5rem) {
   .carouselADM {
+    width: 60%;
     &__slides {
-      width: 60%;
-      margin: 1rem 1rem 0 0;
+      width: 100%;
+      margin: 0;
     }
 
     &__slide {
