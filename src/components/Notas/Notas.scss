@@ -76,3 +76,15 @@
     }
   }
 }
+
+@media screen and (min-width: 62.5rem) {
+  .notas {
+    width: 30%;
+    &__list {
+      flex-direction: column;
+      li {
+        width: 100%;
+      }
+    }
+  }
+}

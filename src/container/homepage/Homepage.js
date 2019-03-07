@@ -22,11 +22,17 @@ class Homepage extends Component{
                         <CarouselADM/>
                         <Informes/>
                     </main>
-                    <Notas/>
-                    <Grupos/>
-                    <Aniversariantes/>
-                    <Feed/>
-                    <Enquetes/>
+                    <sectio>
+                        <Notas/>
+                        <Grupos/>
+                    </sectio>
+                    <section>
+                        <Feed/>
+                        <div>
+                            <Aniversariantes/>
+                            <Enquetes/>
+                        </div>
+                    </section>
                 </div>
             </Fragment>
         );
