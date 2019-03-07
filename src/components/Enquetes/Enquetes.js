@@ -10,25 +10,25 @@ const enquetes = props => {
             <h1>Enquetes</h1>
             <p>Lorem ipsum eget porttitor orci bibendum lorem cras maecenas commodo, conubia maecenas proin sed habitasse id?</p>
             <form className="enquetes__form">
-                <label class="container">
+                <label className="container">
                     Diam egestas purus commodo scelerisque non curae gravida.
                     <input type="radio" name="option" />
-                    <span class="checkmark"></span>
+                    <span className="checkmark"></span>
                 </label>
-                <label class="container">
+                <label className="container">
                     Diam egestas purus commodo scelerisque non curae gravida.
                     <input type="radio" name="option" />
-                    <span class="checkmark"></span>
+                    <span className="checkmark"></span>
                 </label>
-                <label class="container">
+                <label className="container">
                     Diam egestas purus commodo scelerisque non curae gravida.
                     <input type="radio" name="option" />
-                    <span class="checkmark"></span>
+                    <span className="checkmark"></span>
                 </label>
-                <label class="container">
+                <label className="container">
                     Diam egestas purus commodo scelerisque non curae gravida.   
                     <input type="radio" name="option" />
-                    <span class="checkmark"></span>
+                    <span className="checkmark"></span>
                 </label>
             </form>
             <div className="enquetes__buttons">

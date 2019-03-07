@@ -9,8 +9,9 @@ const posts ={
             name: "Ana Clara",
             photoPerfil: AnaPhoto
         },
-        content:"Mais dia de trabalho produtivo",
+        content:"Mais um dia de trabalho muito produtivo",
         photoPost: ComentarioPhoto,
+        time: "1h",
         comentarios: [
             {
                 nome: "Lucas Amorim",
